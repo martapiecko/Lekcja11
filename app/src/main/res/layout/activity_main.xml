@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.x.lekcja11.MainActivity">
+
+    <TextView
+        android:id="@+id/nazwaOut"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nazwa"
+        android:layout_alignBottom="@+id/nazwa"
+        android:layout_alignEnd="@+id/dodaj"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/nazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/opis"
+        android:layout_below="@+id/dodaj"
+        android:layout_marginTop="34dp"
+        android:text="Dane:"/>
+
+     <Button
+        android:id="@+id/dodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/opisIn"
+        android:layout_below="@+id/opisIn"
+        android:layout_marginTop="11dp"
+        android:text="Dodaj" />
+
+    <Button
+        android:id="@+id/usun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="35dp"
+        android:text="Usuń"
+        android:layout_alignBaseline="@+id/dodaj"
+        android:layout_alignBottom="@+id/dodaj"
+         />
+
+    <EditText
+        android:id="@+id/opisIn"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:layout_alignStart="@+id/modelIn"
+        android:layout_alignTop="@+id/opis"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/model"
+        android:layout_below="@+id/modelIn"
+        android:layout_marginTop="22dp"
+        android:text="Opis:"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <EditText
+        android:id="@+id/modelIn"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_alignBaseline="@+id/model"
+        android:layout_alignBottom="@+id/model"
+        android:layout_alignStart="@+id/nazwaIn" />
+
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model:"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/nazwaIn"
+        android:layout_toStartOf="@+id/nazwaIn" />
+
+    <EditText
+        android:id="@+id/nazwaIn"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignBaseline="@+id/nazwaEtykiety"
+        android:layout_alignBottom="@+id/nazwaEtykiety"
+        android:layout_toEndOf="@+id/nazwaEtykiety"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:id="@+id/nazwaEtykiety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazwa:"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nazwa"
+        android:layout_below="@+id/nazwa"
+        android:layout_marginTop="22dp" />
+
+     <TextView
+        android:id="@+id/modelOut"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignStart="@+id/nazwaOut" />
+
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp" />
+
+     <TextView
+        android:id="@+id/opisOut"
+        android:layout_width="215dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/modelOut" />
+
+    <Button
+        android:id="@+id/wyswietl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Wyświetl"
+        android:layout_alignParentBottom="true" />
+
+     <Button
+        android:id="@+id/poprzedni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wyswietl"
+        android:layout_alignBottom="@+id/wyswietl"
+        android:layout_toEndOf="@+id/wyswietl"
+        android:text="Poprzedni" />
+
+    <Button
+        android:id="@+id/nastepny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/poprzedni"
+        android:layout_alignBottom="@+id/poprzedni"
+        android:layout_toEndOf="@+id/poprzedni"
+        android:text="Następny" />
+
+</RelativeLayout>
